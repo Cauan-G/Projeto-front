@@ -1,2 +1,3 @@
-# Metodologias_Ageis
-Área para o desenvolvimento da tarefa de metodologias ágeis
+# Projeto para a discipina de Programação Front-end
+
+Projeto para a discipina de Programação Front-end
