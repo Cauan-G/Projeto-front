@@ -1,10 +1,18 @@
 *{
-    padding: 0;
+    margin: 0;
+}
+
+body{
+     background: #0CE8AA;
 }
 
 section h1{
-
-    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
 }
 
 div{
@@ -12,8 +20,19 @@ div{
     min-height: 600px;
 }
 
+.mecanicos{
+    background: #FFD700;
+}
+.eletronicos{
+    background: #00FFFF;
+}
+.eletro_mecanicos{
+    background: #C0C0C0;
+}
+
 p{
-    margin-left: 100px;
+    
+    margin: 15px;
     font-size: 19px;
 }
 
@@ -21,9 +40,9 @@ img{
     width: 300px;
     height: fit-content;
 }
+/* "moldura" criada por: https://codepen.io/chris22smith/pen/PbBwjp*/
 
-figure img {
-    padding: 0;
+.mecanicos figure img {
     border:solid 2px;
     border-bottom-color:#ffe;
     border-left-color:#eed;
@@ -39,13 +58,66 @@ figure img {
     box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
     box-sizing:border-box;
     display:inline-block;
+    margin: 15px;
     padding:20px;
     position:relative;
     text-align:center;
   }
 
-  figure figcaption{
+
+.eletro_mecanicos figure img {
+    border:solid 2px;
+    border-bottom-color:#ffe;
+    border-left-color:#eed;
+    border-right-color:#eed;
+    border-top-color:#ccb;
+    background-color:#ddc;
+    border:solid 5vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:2px;
+    border-right-color:#eee;
+    border-top-color:#ddd;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    display:inline-block;
+    margin: 15px;
+    padding:20px;
+    position:relative;
+    text-align:center;
+  }
+
+
+.eletronicos figure img {
+    border:solid 2px;
+    border-bottom-color:#ffe;
+    border-left-color:#eed;
+    border-right-color:#eed;
+    border-top-color:#ccb;
+    background-color:#ddc;
+    border:solid 5vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:2px;
+    border-right-color:#eee;
+    border-top-color:#ddd;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    display:inline-block;
+    margin: 15px;
+    padding:20px;
+    position:relative;
+    text-align:center;
+  }
+
+  
+  .mecanicos, .eletro_mecanicos, .eletronicos figcaption{
     text-align: center;
     margin-top: 19px;
     font-style: italic;
   }
+
+    li{
+        display: inline-block;
+        align-items: center;
+    }
