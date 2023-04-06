@@ -1,123 +1,157 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-body{
-     background: #0CE8AA;
+body {
+  background: #0ce8aa;
 }
 
-section h1{
+.inicio{
     display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 40px;
+    justify-content: center;
 }
 
-div{
-    display: inline-flex;
-    min-height: 600px;
+section h1 {
+  /* display: flex; */
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
 }
 
-.mecanicos{
-    background: #FFD700;
-}
-.eletronicos{
-    background: #00FFFF;
-}
-.eletro_mecanicos{
-    background: #C0C0C0;
+div {
+  display: inline-flex;
+  min-height: 600px;
 }
 
-p{
-    
-    margin: 15px;
-    font-size: 19px;
+.inicio div{
+    display: block;
 }
 
-img{
-    width: 300px;
-    height: fit-content;
+.mecanicos {
+  background: #ffd700;
+}
+.eletronicos {
+  background: #00ffff;
+}
+.eletro_mecanicos {
+  background: #c0c0c0;
+}
+
+p {
+  margin: 15px;
+  font-size: 19px;
+}
+
+img {
+  width: 300px;
+  height: fit-content;
 }
 /* "moldura" criada por: https://codepen.io/chris22smith/pen/PbBwjp*/
 
 .mecanicos figure img {
-    border:solid 2px;
-    border-bottom-color:#ffe;
-    border-left-color:#eed;
-    border-right-color:#eed;
-    border-top-color:#ccb;
-    background-color:#ddc;
-    border:solid 5vmin #eee;
-    border-bottom-color:#fff;
-    border-left-color:#eee;
-    border-radius:2px;
-    border-right-color:#eee;
-    border-top-color:#ddd;
-    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-    box-sizing:border-box;
-    display:inline-block;
-    margin: 15px;
-    padding:20px;
-    position:relative;
-    text-align:center;
-  }
-
+  border: solid 2px;
+  border-bottom-color: #ffe;
+  border-left-color: #eed;
+  border-right-color: #eed;
+  border-top-color: #ccb;
+  background-color: #ddc;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 25px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
 
 .eletro_mecanicos figure img {
-    border:solid 2px;
-    border-bottom-color:#ffe;
-    border-left-color:#eed;
-    border-right-color:#eed;
-    border-top-color:#ccb;
-    background-color:#ddc;
-    border:solid 5vmin #eee;
-    border-bottom-color:#fff;
-    border-left-color:#eee;
-    border-radius:2px;
-    border-right-color:#eee;
-    border-top-color:#ddd;
-    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-    box-sizing:border-box;
-    display:inline-block;
-    margin: 15px;
-    padding:20px;
-    position:relative;
-    text-align:center;
-  }
-
+  border: solid 2px;
+  border-bottom-color: #ffe;
+  border-left-color: #eed;
+  border-right-color: #eed;
+  border-top-color: #ccb;
+  background-color: #ddc;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 25px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
 
 .eletronicos figure img {
-    border:solid 2px;
-    border-bottom-color:#ffe;
-    border-left-color:#eed;
-    border-right-color:#eed;
-    border-top-color:#ccb;
-    background-color:#ddc;
-    border:solid 5vmin #eee;
-    border-bottom-color:#fff;
-    border-left-color:#eee;
-    border-radius:2px;
-    border-right-color:#eee;
-    border-top-color:#ddd;
-    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-    box-sizing:border-box;
-    display:inline-block;
+  border: solid 2px;
+  border-bottom-color: #ffe;
+  border-left-color: #eed;
+  border-right-color: #eed;
+  border-top-color: #ccb;
+  background-color: #ddc;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 25px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.eletronicos figcaption {
+  text-align: center;
+  margin-top: 19px;
+  font-style: italic;
+}
+
+.mecanicos figcaption {
+  text-align: center;
+  margin-top: 19px;
+  font-style: italic;
+}
+.eletro_mecanicos figcaption {
+  text-align: center;
+  margin-top: 19px;
+  font-style: italic;
+}
+
+li {
+  display: inline-flex;
+  align-items: center;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
     margin: 15px;
-    padding:20px;
-    position:relative;
-    text-align:center;
-  }
+}
 
-  
-  .mecanicos, .eletro_mecanicos, .eletronicos figcaption{
-    text-align: center;
-    margin-top: 19px;
-    font-style: italic;
-  }
+p strong{
+    text-transform: uppercase;
+    font-size: 20px;
+}
 
-    li{
-        display: inline-block;
-        align-items: center;
-    }
+.rodape{
+    display: flex;
+    align-items: center;
+}
