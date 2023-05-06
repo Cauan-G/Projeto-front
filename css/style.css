@@ -2,30 +2,37 @@
   margin: 0;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   background: #0ce8aa;
+  scroll-snap-type: y mandatory;
 }
 
 .inicio{
     display: flex;
     justify-content: center;
+    padding: 70px;
 }
 
 section h1 {
-  /* display: flex; */
+  display: flex;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   font-size: 40px;
 }
 
-div {
-  display: inline-flex;
-  min-height: 600px;
+div{
+  scroll-snap-align: start;
 }
 
-.inicio div{
-    display: block;
+.mecanicos div, .eletro_mecanicos div ,.eletronicos div {
+  display: inline-flex;
+  min-height: 100vh;
+  padding: 30px;
 }
 
 .mecanicos {
@@ -38,18 +45,32 @@ div {
   background: #c0c0c0;
 }
 
-p {
+p, figcaption{
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+p{
+  text-align: justify;
+  font-size: 18px;
   margin: 15px;
-  font-size: 19px;
+  padding: 10px;
+  line-height: 25px;
+}
+
+p strong{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 img {
-  width: 300px;
+  width: 350px;
   height: fit-content;
 }
+
 /* "moldura" criada por: https://codepen.io/chris22smith/pen/PbBwjp*/
 
-.mecanicos figure img {
+.mecanicos figure img, .eletro_mecanicos figure img, .eletronicos figure img {
   border: solid 2px;
   border-bottom-color: #ffe;
   border-left-color: #eed;
@@ -72,103 +93,40 @@ img {
   text-align: center;
 }
 
-.eletro_mecanicos figure img {
-  border: solid 2px;
-  border-bottom-color: #ffe;
-  border-left-color: #eed;
-  border-right-color: #eed;
-  border-top-color: #ccb;
-  background-color: #ddc;
-  border: solid 5vmin #eee;
-  border-bottom-color: #fff;
-  border-left-color: #eee;
-  border-radius: 2px;
-  border-right-color: #eee;
-  border-top-color: #ddd;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
-    0 5px 10px 5px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  display: inline-block;
-  margin: 25px;
-  padding: 20px;
-  position: relative;
+.eletronicos figcaption, .mecanicos figcaption, .eletro_mecanicos figcaption  {
+  font-size: 20px;
   text-align: center;
-}
-
-.eletronicos figure img {
-  border: solid 2px;
-  border-bottom-color: #ffe;
-  border-left-color: #eed;
-  border-right-color: #eed;
-  border-top-color: #ccb;
-  background-color: #ddc;
-  border: solid 5vmin #eee;
-  border-bottom-color: #fff;
-  border-left-color: #eee;
-  border-radius: 2px;
-  border-right-color: #eee;
-  border-top-color: #ddd;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
-    0 5px 10px 5px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  display: inline-block;
-  margin: 25px;
-  padding: 20px;
-  position: relative;
-  text-align: center;
-}
-
-.eletronicos figcaption {
-  text-align: center;
-  margin-top: 19px;
+  margin-top: 15px;
   font-style: italic;
 }
 
-.mecanicos figcaption {
-  text-align: center;
-  margin-top: 19px;
-  font-style: italic;
-}
-.eletro_mecanicos figcaption {
-  text-align: center;
-  margin-top: 19px;
-  font-style: italic;
+.rodape{
+  background-color: black;
 }
 
-ul{
+.rodape p{
+  color: aliceblue;
+}
+
+.rodape ul{
   text-align: center;
 }
 
-li {
+.rodape ul li {
   display: inline-flex;
   border-left: 3px solid white;
   border-right: 3px solid white;
   margin: 15px;
 }
 
-li a{
+.rodape ul li a{
   text-align: center;
   width: 30px;
   height: 30px;
 }
 
-li a img{
+.rodape ul li a img{
   width: 30px;
   height: 30px;
   border-radius: 100px;
 }
-
-p{
-    text-align: justify;
-    font-size: 18px;
-    margin: 15px;
-    padding: 10px;
-    line-height: 25px;
-}
-
-p strong{
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 33px;
-}
-
