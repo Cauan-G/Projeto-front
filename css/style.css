@@ -12,9 +12,26 @@ body {
 }
 
 .inicio{
-    display: flex;
-    justify-content: center;
-    padding: 70px;
+  display: flex;
+  padding: 70px;
+}
+
+.final {
+  display: flex;
+  padding: 70px;
+}
+
+.inicio img, .final img{
+  border-radius: 30%;
+  margin: 15px;
+  display: inline-flex;
+}
+
+
+.inicio p, .final p{
+  display: inline-flex;
+  float: left;
+  position: absolute;
 }
 
 section h1 {
@@ -27,6 +44,7 @@ section h1 {
 
 div{
   scroll-snap-align: start;
+  padding-top: 80px;
 }
 
 .mecanicos div, .eletro_mecanicos div ,.eletronicos div {
@@ -53,14 +71,15 @@ p{
   text-align: justify;
   font-size: 18px;
   margin: 15px;
+  margin-top: 50px;
   padding: 10px;
   line-height: 25px;
 }
 
 p strong{
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 40px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 40px;
 }
 
 img {
@@ -88,6 +107,7 @@ img {
   box-sizing: border-box;
   display: inline-block;
   margin: 25px;
+  margin-top: 50px;
   padding: 20px;
   position: relative;
   text-align: center;
@@ -123,6 +143,8 @@ img {
   text-align: center;
   width: 30px;
   height: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rodape ul li a img{
@@ -131,7 +153,11 @@ img {
   border-radius: 100px;
 }
 
-
+.rodape h2 {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 5px;
+}
 .cabecalho {
   background-color: #fff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
