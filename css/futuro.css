@@ -1,0 +1,95 @@
+/* Estilo global da página */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para cada tópico */
+  .topic-ia, .topic-iot, .topic-rv-ra, .topic-computacao-nuvem, .topic-blockchain {
+    margin-bottom: 40px;
+  }
+  
+  .topic-ia h3 {
+    color: #00c4ff;
+  }
+  
+  .topic-iot h3 {
+    color: #ff00c4;
+  }
+  
+  .topic-rv-ra h3 {
+    color: #c400ff;
+  }
+  
+  .topic-computacao-nuvem h3 {
+    color: #00ff1e;
+  }
+  
+  .topic-blockchain h3 {
+    color: #ffea00;
+  }
+  
+  .topic-ia p, .topic-iot p, .topic-rv-ra p, .topic-computacao-nuvem p, .topic-blockchain p {
+    margin-bottom: 10px;
+  }
+  
+  .topic-ia img, .topic-iot img, .topic-rv-ra img, .topic-computacao-nuvem img, .topic-blockchain img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .topic-ia figcaption, .topic-iot figcaption, .topic-rv-ra figcaption, .topic-computacao-nuvem figcaption, .topic-blockchain figcaption {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Estilo para as cores das imagens */
+  .topic-ia img {
+    filter: brightness(150%) saturate(150%) hue-rotate(200deg);
+  }
+  
+  .topic-iot img {
+    filter: brightness(150%) saturate(150%) hue-rotate(330deg);
+  }
+  
+  .topic-rv-ra img {
+    filter: brightness(150%) saturate(150%) hue-rotate(270deg);
+  }
+  
+  .topic-computacao-nuvem img {
+    filter: brightness(150%) saturate(150%) hue-rotate(120deg);
+  }
+  
+  .topic-blockchain img {
+    filter: brightness(150%) saturate(150%) hue-rotate(60deg);
+  }
+
+
+
+ 
+

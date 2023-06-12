@@ -220,3 +220,54 @@ img {
 .header__subtitle {
   font-size: 34px;
 }
+
+@media (max-width: 600px) {
+  body {
+    width: 100%; 
+    margin: 0 auto;
+  }
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 100%; 
+    height: auto; 
+  }
+  p {
+    text-align: center; 
+  }
+  
+.mecanicos figure img, .eletro_mecanicos figure img, .eletronicos figure img {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.mecanicos div, .eletro_mecanicos div ,.eletronicos div {
+  display: block;
+  min-height: 500px;
+  height: auto;
+  padding: 30px;
+}
+
+.logo {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.inicio p, .final p {
+  display: block; 
+  float: none; 
+  position: relative;
+}
+}
