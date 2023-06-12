@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -7,7 +8,7 @@ html {
 }
 
 body {
-  background: #0ce8aa;
+  background-image: linear-gradient(#1C1C1C, #A9A9A9, #87CEFF);
   scroll-snap-type: y mandatory;
 }
 
@@ -53,14 +54,10 @@ div{
   padding: 30px;
 }
 
-.mecanicos {
-  background: #ffd700;
-}
-.eletronicos {
-  background: #00ffff;
-}
+.mecanicos 
+.eletronicos 
 .eletro_mecanicos {
-  background: #c0c0c0;
+  background: transparent;
 }
 
 p, figcaption{
@@ -80,6 +77,10 @@ p strong{
   text-transform: uppercase;
   font-size: 20px;
   line-height: 40px;
+}
+
+.mecanicos p, .inicio p{
+  color: whitesmoke;
 }
 
 img {
@@ -158,6 +159,7 @@ img {
   text-align: center;
   padding-top: 5px;
 }
+
 .cabecalho {
   background-color: #fff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
@@ -219,9 +221,37 @@ img {
 
 .header__subtitle {
   font-size: 34px;
+  line-height: 40px;
+}
+.final{
+  height: 100vh;
 }
 
-@media (max-width: 600px) {
+.fim{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.futuro{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 40px;
+  background-image: linear-gradient(#6959CD, #1C1C1C);
+}
+
+.futuro:hover{ 
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(#1C1C1C, #6959CD);
+  transition: background-image 0.9s;
+}
+
+@media (max-width: 700px) {
   body {
     width: 100%; 
     margin: 0 auto;
@@ -269,5 +299,62 @@ img {
   display: block; 
   float: none; 
   position: relative;
+}
+}
+
+
+@media (max-width: 1000px) {
+  body {
+    width: 100%; 
+    margin: 0;
+  }
+  figure {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  figcaption{
+    display: none;
+  }
+
+  img {
+    width: 60%; 
+    height: auto; 
+    justify-self: center;
+  }
+  p {
+    text-align: center; 
+  }
+  
+.mecanicos div, .eletro_mecanicos div ,.eletronicos div {
+  display: block;
+  min-height: 500px;
+  height: auto;
+  padding: 30px;
+}
+
+.logo {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.inicio p, .final p {
+  display: block; 
+  float: none; 
+  position: relative;
+}
+
+.fim{
+  justify-content: center;
+  text-align: center;
+}
+
+.fim   img {
+  display: flex;
+  justify-self: center;
 }
 }
