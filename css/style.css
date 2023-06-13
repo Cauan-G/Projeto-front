@@ -251,7 +251,18 @@ img {
   transition: background-image 0.9s;
 }
 
-@media (max-width: 700px) {
+
+@media (max-width: 470px) {
+  .menu{
+    display: none;
+  }
+  .cabecalho{
+    display: none;
+  }
+}
+
+
+@media (max-width: 710px) {
   body {
     width: 100%; 
     margin: 0 auto;
@@ -266,6 +277,16 @@ img {
   }
   p {
     text-align: center; 
+  }
+
+  div{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+
+  .logo{
+    display: none;
   }
   
 .mecanicos figure img, .eletro_mecanicos figure img, .eletronicos figure img {
@@ -287,18 +308,14 @@ img {
   padding: 30px;
 }
 
-.logo {
-  color: #333;
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .inicio p, .final p {
   display: block; 
   float: none; 
   position: relative;
+}
+
+.fim{
+  display: grid;
 }
 }
 
@@ -356,5 +373,8 @@ img {
 .fim   img {
   display: flex;
   justify-self: center;
+}
+div{
+  display: grid;
 }
 }

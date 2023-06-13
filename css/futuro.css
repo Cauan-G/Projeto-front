@@ -11,10 +11,10 @@ body {
     padding: 40px;
   }
   
-  h2 {
+  h1 {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 27px;
+    margin-bottom: 40px;
   }
   
   p {
@@ -26,70 +26,81 @@ body {
     font-size: 20px;
     margin-bottom: 10px;
   }
+
+  a{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+  }
+  
   
   /* Estilo para cada tópico */
-  .topic-ia, .topic-iot, .topic-rv-ra, .topic-computacao-nuvem, .topic-blockchain {
+  .ia, .iot, .rv-ra, .computacao-nuvem, .blockchain {
     margin-bottom: 40px;
   }
   
-  .topic-ia h3 {
+  .ia h3 {
     color: #00c4ff;
   }
   
-  .topic-iot h3 {
+  .iot h3 {
     color: #ff00c4;
   }
   
-  .topic-rv-ra h3 {
+  .rv-ra h3 {
     color: #c400ff;
   }
   
-  .topic-computacao-nuvem h3 {
+  .computacao-nuvem h3 {
     color: #00ff1e;
   }
   
-  .topic-blockchain h3 {
+  .blockchain h3 {
     color: #ffea00;
   }
   
-  .topic-ia p, .topic-iot p, .topic-rv-ra p, .topic-computacao-nuvem p, .topic-blockchain p {
+  .ia p, .iot p, .rv-ra p, .computacao-nuvem p, .blockchain p {
     margin-bottom: 10px;
   }
   
-  .topic-ia img, .topic-iot img, .topic-rv-ra img, .topic-computacao-nuvem img, .topic-blockchain img {
+  .ia img, .iot img, .rv-ra img, .computacao-nuvem img, .blockchain img {
     display: block;
     max-width: 100%;
     height: auto;
     margin-top: 10px;
   }
   
-  .topic-ia figcaption, .topic-iot figcaption, .topic-rv-ra figcaption, .topic-computacao-nuvem figcaption, .topic-blockchain figcaption {
+  .ia figcaption, .iot figcaption, .rv-ra figcaption, .computacao-nuvem figcaption, .blockchain figcaption {
     font-size: 14px;
     text-align: center;
   }
   
   /* Estilo para as cores das imagens */
-  .topic-ia img {
-    filter: brightness(150%) saturate(150%) hue-rotate(200deg);
+  .ia img {
+    filter: brightness(150%) hue-rotate(200deg);
   }
   
-  .topic-iot img {
-    filter: brightness(150%) saturate(150%) hue-rotate(330deg);
+  .iot img {
+    filter: brightness(150%) hue-rotate(330deg);
   }
   
-  .topic-rv-ra img {
-    filter: brightness(150%) saturate(150%) hue-rotate(270deg);
+  .rv-ra img {
+    filter: brightness(150%) hue-rotate(270deg);
   }
   
-  .topic-computacao-nuvem img {
-    filter: brightness(150%) saturate(150%) hue-rotate(120deg);
+  .computacao-nuvem img {
+    filter: brightness(150%) hue-rotate(120deg);
   }
   
-  .topic-blockchain img {
-    filter: brightness(150%) saturate(150%) hue-rotate(60deg);
+  .blockchain img {
+    filter: brightness(150%) hue-rotate(60deg);
   }
 
-
-
- 
-
+  @media (max-width: 700px) {
+    p{
+      text-align: center;
+    }
+  }
