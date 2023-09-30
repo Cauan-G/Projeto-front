@@ -12,42 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <div>
-    <section class="inicio">
-
+    <nav class="cabecalho">
+      <div class="container">
+        <a href="#" class="logo">História dos Computadores</a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#mecanicos">Mecânicos</a></li>
+            <li><a href="#Eletromecânicos">Eletromecânicos</a></li>
+            <li><a href="#eletronicos">Eletrônicos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="cabecalho">
-        <div class="container">
-          <a href="#" class="logo">História dos Computadores</a>
-          <nav class="menu">
-            <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#mecanicos">Mecânicos</a></li>
-              <li><a href="#Eletromecânicos">Eletromecânicos</a></li>
-              <li><a href="#eletronicos">Eletrônicos</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-            </ul>
-          </nav>
-        </div>
-      </nav>
+    </nav>
+    <section class="inicio">
+      <div>
+        <header class="header">
+          <div class="header__content">
+            
+            <p class="header__subtitle">Uma viagem no tempo <br> sobre os computadores</p>
+          </div>
+        </header>
   
   
-  
-      <header class="header">
-        <div class="header__content">
+      </div>
+    </section>
+
+
       
-          <p class="header__subtitle">Uma viagem no tempo <br> sobre os computadores</p>
-        </div>
-      </header>
-  
-  
-
-
-
-    <section id="inicio" class="inicio">
+    <section id="introducao" class="introducao">
       
       <div>
-        <img src="img/computador.jpg" alt="computador atual" />
+        <!-- <img src="img/pc.png" alt="computador atual" style="height: 400px;"/> -->
         <p>
           Computadores algo que hoje em dia é quase impossível viver sem, desde
           entreterimento até trabalho pode ser adquirido através deles, mas você
@@ -55,11 +52,9 @@
         </p>
       </div>
     </section>
-    <main>
-      <section id="mecanicos">
-      </section>
-      </main>
-    <section class="mecanicos">
+
+   
+  <section class="mecanicos" id="mecanicos">
       <div class="abaco">
         <figure>
           <img src="img/abaco.png" alt="Ábaco" />
@@ -374,37 +369,48 @@
     </section>
     <section class="final">
       <div class="fim">
+        
         <h3>
           Que tal conhecer um pouco do futuro?
         </h3>
         <a class="futuro" href="futuro.html">Viajem para o futuro</a>
       </div>  
     </section>
+
     <footer class="rodape">
       <h2>Agradeçemos a atenção</h2>
       <h2>Sobre nós:</h2>
-      <div id="sobre">
-      <ul>
-        <li>
-          <p>
-            Cauan Guimarães <br />
-            <a href="https://github.com/Cauan-G" target="_blank"
-              ><img src="img/github.png" alt="link para as paginas do github"
-            /></a>
-          </p>
-        </li>
 
-        <li>
-          <p>
-            Salvador da Silva <br />
-            <a href="https://github.com/Salvador009" target="_blank"
-              ><img src="img/github.png" alt="link para as paginas do github"
-            /></a>
-          </p>
-        </li>
-      </ul>
-    </div>
+      <div id="sobre">
+        <ul>
+          <li>
+            <p>
+              Cauan Guimarães <br/>
+              <a href="https://github.com/Cauan-G" target="_blank">
+
+                <img src="img/github.png" alt="link para as paginas do github" />
+              </a>
+
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Salvador da Silva <br/>
+              <a href="https://github.com/Salvador009" target="_blank">
+
+                <img src="img/github.png" alt="link para as paginas do github" />
+              </a>
+              
+            </p>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
+
+
   <script src="js/main.js"></script>
+
+
 </html>
