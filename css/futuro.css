@@ -33,7 +33,7 @@ body {
   }
 
   #passado{
-    background-color: whitesmoke;
+    background-color: #111;
     padding: 10px;
     border-radius: 20px;
     position: fixed;
@@ -83,7 +83,7 @@ body {
   }
   
   /* Estilo para as cores das imagens */
-  .ia img {
+  /* .ia img {
     filter: brightness(150%) hue-rotate(200deg);
   }
   
@@ -101,6 +101,20 @@ body {
   
   .blockchain img {
     filter: brightness(150%) hue-rotate(60deg);
+  } */
+
+  .arrow-left {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ff00c4;
+    border-left: 0;
+    border-top: 0;
+  
+    transform: rotate(135deg);
+  }
+
+  #passado:hover{
+    background-color: #000;
   }
 
   @media (max-width: 700px) {
@@ -108,3 +122,4 @@ body {
       text-align: center;
     }
   }
+
